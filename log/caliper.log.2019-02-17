@@ -1,0 +1,168 @@
+2019-02-17T13:46:25+06:00 - DEBUG Successfully constructed a winston logger with configurations
+	{"debug":"log/caliper.log","info":"console"}
+
+2019-02-17T13:46:25+06:00 - INFO [bench-flow.js]: ####### Caliper Test ####### 
+
+2019-02-17T13:46:27+06:00 - INFO [bench-flow.js]: Executing command: docker-compose -f network/fabric-v1.2/docker-compose.yml up -d;sleep 3s 
+
+2019-02-17T13:46:55+06:00 - INFO [create-channel.js]: Creating mychannel... 
+
+2019-02-17T13:46:56+06:00 - INFO [create-channel.js]: Created mychannel successfully 
+
+2019-02-17T13:46:56+06:00 - INFO [create-channel.js]: Sleeping 5s... 
+
+2019-02-17T13:47:01+06:00 - INFO [join-channel.js]: Joining channels... 
+
+2019-02-17T13:47:01+06:00 - INFO [join-channel.js]: Joining organization org1 to channel mychannel... 
+
+2019-02-17T13:47:02+06:00 - INFO [join-channel.js]: Successfully joined peerOrg1's peers to mychannel 
+
+2019-02-17T13:47:02+06:00 - INFO [join-channel.js]: Successfully joined mychannel 
+
+2019-02-17T13:47:02+06:00 - INFO [install-chaincode.js]: installing all chaincodes...... 
+
+2019-02-17T13:47:02+06:00 - INFO [install-chaincode.js]: Installing chaincode fabcar... 
+
+2019-02-17T13:47:02+06:00 - INFO [install-chaincode.js]: Installed chaincode fabcar successfully in all peers 
+
+2019-02-17T13:47:02+06:00 - INFO [instantiate-chaincode.js]: Instantiating chaincodes... 
+
+2019-02-17T13:47:34+06:00 - WARN [e2eUtils.js]: instantiate proposal was bad: Error: failed to execute transaction c43f07a48f28b77432b57ddd8a45dfb194c51a56cbaa655415712724b7a7a058: error starting container: error starting container: API error (404): network dev_default not found 
+
+2019-02-17T13:47:34+06:00 - WARN [e2eUtils.js]: [{"message":"failed to execute transaction c43f07a48f28b77432b57ddd8a45dfb194c51a56cbaa655415712724b7a7a058: error starting container: error starting container: API error (404): network dev_default not found","stack":"Error: failed to execute transaction c43f07a48f28b77432b57ddd8a45dfb194c51a56cbaa655415712724b7a7a058: error starting container: error starting container: API error (404): network dev_default not found\n    at self._endorserClient.processProposal (/home/ialom/chain-caliper/node_modules/fabric-client/lib/Peer.js:140:36)\n    at Object.onReceiveStatus (/home/ialom/chain-caliper/node_modules/fabric-client/node_modules/grpc/src/client_interceptors.js:1191:9)\n    at InterceptingListener._callNext (/home/ialom/chain-caliper/node_modules/fabric-client/node_modules/grpc/src/client_interceptors.js:564:42)\n    at InterceptingListener.onReceiveStatus (/home/ialom/chain-caliper/node_modules/fabric-client/node_modules/grpc/src/client_interceptors.js:614:8)\n    at callback (/home/ialom/chain-caliper/node_modules/fabric-client/node_modules/grpc/src/client_interceptors.js:841:24)","status":500,"payload":{"type":"Buffer","data":[]},"peer":{"url":"grpc://localhost:7051","name":"localhost:7051","options":{"grpc.ssl_target_name_override":"peer0.org1.example.com","grpc.default_authority":"peer0.org1.example.com","grpc.max_receive_message_length":-1,"grpc.max_send_message_length":-1}},"isProposalResponse":true}] 
+
+2019-02-17T13:47:34+06:00 - ERROR [instantiate-chaincode.js]: Failed to instantiate chaincodes: Error: All proposals were not good
+    at instantiate (/home/ialom/chain-caliper/src/adapters/fabric/e2eUtils.js:394:15)
+    at <anonymous> 
+
+2019-02-17T13:47:34+06:00 - ERROR [fabric.js]: Fabric chaincode install failed: Error: All proposals were not good
+    at instantiate (/home/ialom/chain-caliper/src/adapters/fabric/e2eUtils.js:394:15)
+    at <anonymous> 
+
+2019-02-17T13:47:34+06:00 - ERROR [bench-flow.js]: Error: Error: All proposals were not good
+    at instantiate (/home/ialom/chain-caliper/src/adapters/fabric/e2eUtils.js:394:15)
+    at <anonymous> 
+
+2019-02-17T13:47:34+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-02-17T13:47:34+06:00 - INFO [bench-flow.js]: Executing command: docker-compose -f network/fabric-v1.2/docker-compose.yml down;docker rm $(docker ps -aq);docker rmi $(docker images dev* -q) 
+
+2019-02-17T13:47:48+06:00 - INFO [bench-flow.js]: 
+
+#######################################
+# Test summary: 0 succeeded, 0 failed #
+#######################################
+ 
+
+2019-02-17T13:50:05+06:00 - DEBUG Successfully constructed a winston logger with configurations
+	{"debug":"log/caliper.log","info":"console"}
+
+2019-02-17T13:50:05+06:00 - INFO [bench-flow.js]: ####### Caliper Test ####### 
+
+2019-02-17T13:50:08+06:00 - INFO [bench-flow.js]: Executing command: docker-compose -f network/fabric-v1.2/docker-compose.yml up -d;sleep 3s 
+
+2019-02-17T13:50:33+06:00 - INFO [create-channel.js]: Creating mychannel... 
+
+2019-02-17T13:50:34+06:00 - INFO [create-channel.js]: Created mychannel successfully 
+
+2019-02-17T13:50:34+06:00 - INFO [create-channel.js]: Sleeping 5s... 
+
+2019-02-17T13:50:39+06:00 - INFO [join-channel.js]: Joining channels... 
+
+2019-02-17T13:50:39+06:00 - INFO [join-channel.js]: Joining organization org1 to channel mychannel... 
+
+2019-02-17T13:50:40+06:00 - INFO [join-channel.js]: Successfully joined peerOrg1's peers to mychannel 
+
+2019-02-17T13:50:40+06:00 - INFO [join-channel.js]: Successfully joined mychannel 
+
+2019-02-17T13:50:40+06:00 - INFO [install-chaincode.js]: installing all chaincodes...... 
+
+2019-02-17T13:50:40+06:00 - INFO [install-chaincode.js]: Installing chaincode fabcar... 
+
+2019-02-17T13:50:40+06:00 - INFO [install-chaincode.js]: Installed chaincode fabcar successfully in all peers 
+
+2019-02-17T13:50:40+06:00 - INFO [instantiate-chaincode.js]: Instantiating chaincodes... 
+
+2019-02-17T13:55:40+06:00 - WARN [e2eUtils.js]: instantiate proposal was bad: Error: failed to execute transaction b0d1c5e829d2ada4edea1ac9b06c6154bb13d77d7d101bdf15738053d76d72a6: timeout expired while starting chaincode fabcar:v0 for transaction b0d1c5e829d2ada4edea1ac9b06c6154bb13d77d7d101bdf15738053d76d72a6 
+
+2019-02-17T13:55:40+06:00 - WARN [e2eUtils.js]: [{"message":"failed to execute transaction b0d1c5e829d2ada4edea1ac9b06c6154bb13d77d7d101bdf15738053d76d72a6: timeout expired while starting chaincode fabcar:v0 for transaction b0d1c5e829d2ada4edea1ac9b06c6154bb13d77d7d101bdf15738053d76d72a6","stack":"Error: failed to execute transaction b0d1c5e829d2ada4edea1ac9b06c6154bb13d77d7d101bdf15738053d76d72a6: timeout expired while starting chaincode fabcar:v0 for transaction b0d1c5e829d2ada4edea1ac9b06c6154bb13d77d7d101bdf15738053d76d72a6\n    at self._endorserClient.processProposal (/home/ialom/chain-caliper/node_modules/fabric-client/lib/Peer.js:140:36)\n    at Object.onReceiveStatus (/home/ialom/chain-caliper/node_modules/fabric-client/node_modules/grpc/src/client_interceptors.js:1191:9)\n    at InterceptingListener._callNext (/home/ialom/chain-caliper/node_modules/fabric-client/node_modules/grpc/src/client_interceptors.js:564:42)\n    at InterceptingListener.onReceiveStatus (/home/ialom/chain-caliper/node_modules/fabric-client/node_modules/grpc/src/client_interceptors.js:614:8)\n    at callback (/home/ialom/chain-caliper/node_modules/fabric-client/node_modules/grpc/src/client_interceptors.js:841:24)","status":500,"payload":{"type":"Buffer","data":[]},"peer":{"url":"grpc://localhost:7051","name":"localhost:7051","options":{"grpc.ssl_target_name_override":"peer0.org1.example.com","grpc.default_authority":"peer0.org1.example.com","grpc.max_receive_message_length":-1,"grpc.max_send_message_length":-1}},"isProposalResponse":true}] 
+
+2019-02-17T13:55:40+06:00 - ERROR [instantiate-chaincode.js]: Failed to instantiate chaincodes: Error: All proposals were not good
+    at instantiate (/home/ialom/chain-caliper/src/adapters/fabric/e2eUtils.js:394:15)
+    at <anonymous> 
+
+2019-02-17T13:55:40+06:00 - ERROR [fabric.js]: Fabric chaincode install failed: Error: All proposals were not good
+    at instantiate (/home/ialom/chain-caliper/src/adapters/fabric/e2eUtils.js:394:15)
+    at <anonymous> 
+
+2019-02-17T13:55:40+06:00 - ERROR [bench-flow.js]: Error: Error: All proposals were not good
+    at instantiate (/home/ialom/chain-caliper/src/adapters/fabric/e2eUtils.js:394:15)
+    at <anonymous> 
+
+2019-02-17T13:55:40+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-02-17T13:55:40+06:00 - INFO [bench-flow.js]: Executing command: docker-compose -f network/fabric-v1.2/docker-compose.yml down;docker rm $(docker ps -aq);docker rmi $(docker images dev* -q) 
+
+2019-02-17T13:55:54+06:00 - INFO [bench-flow.js]: 
+
+#######################################
+# Test summary: 0 succeeded, 0 failed #
+#######################################
+ 
+
+2019-02-17T13:59:36+06:00 - DEBUG Successfully constructed a winston logger with configurations
+	{"debug":"log/caliper.log","info":"console"}
+
+2019-02-17T13:59:36+06:00 - INFO [bench-flow.js]: ####### Caliper Test ####### 
+
+2019-02-17T13:59:39+06:00 - INFO [bench-flow.js]: Executing command: docker-compose -f network/fabric-v1.2/docker-compose.yml up -d;sleep 3s 
+
+2019-02-17T14:00:00+06:00 - INFO [create-channel.js]: Creating mychannel... 
+
+2019-02-17T14:00:00+06:00 - INFO [create-channel.js]: Created mychannel successfully 
+
+2019-02-17T14:00:00+06:00 - INFO [create-channel.js]: Sleeping 5s... 
+
+2019-02-17T14:00:05+06:00 - INFO [join-channel.js]: Joining channels... 
+
+2019-02-17T14:00:05+06:00 - INFO [join-channel.js]: Joining organization org1 to channel mychannel... 
+
+2019-02-17T14:00:07+06:00 - INFO [join-channel.js]: Successfully joined peerOrg1's peers to mychannel 
+
+2019-02-17T14:00:07+06:00 - INFO [join-channel.js]: Successfully joined mychannel 
+
+2019-02-17T14:00:07+06:00 - INFO [install-chaincode.js]: installing all chaincodes...... 
+
+2019-02-17T14:00:07+06:00 - INFO [install-chaincode.js]: Installing chaincode fabcar... 
+
+2019-02-17T14:00:07+06:00 - INFO [install-chaincode.js]: Installed chaincode fabcar successfully in all peers 
+
+2019-02-17T14:00:07+06:00 - INFO [instantiate-chaincode.js]: Instantiating chaincodes... 
+
+2019-02-17T14:05:07+06:00 - WARN [e2eUtils.js]: instantiate proposal was bad: Error: failed to execute transaction af7e8d85b842f26924bff95f33935482670fc1c096910cd53881aa0c7eee8583: timeout expired while starting chaincode fabcar:v0 for transaction af7e8d85b842f26924bff95f33935482670fc1c096910cd53881aa0c7eee8583 
+
+2019-02-17T14:05:07+06:00 - WARN [e2eUtils.js]: [{"message":"failed to execute transaction af7e8d85b842f26924bff95f33935482670fc1c096910cd53881aa0c7eee8583: timeout expired while starting chaincode fabcar:v0 for transaction af7e8d85b842f26924bff95f33935482670fc1c096910cd53881aa0c7eee8583","stack":"Error: failed to execute transaction af7e8d85b842f26924bff95f33935482670fc1c096910cd53881aa0c7eee8583: timeout expired while starting chaincode fabcar:v0 for transaction af7e8d85b842f26924bff95f33935482670fc1c096910cd53881aa0c7eee8583\n    at self._endorserClient.processProposal (/home/ialom/chain-caliper/node_modules/fabric-client/lib/Peer.js:140:36)\n    at Object.onReceiveStatus (/home/ialom/chain-caliper/node_modules/fabric-client/node_modules/grpc/src/client_interceptors.js:1191:9)\n    at InterceptingListener._callNext (/home/ialom/chain-caliper/node_modules/fabric-client/node_modules/grpc/src/client_interceptors.js:564:42)\n    at InterceptingListener.onReceiveStatus (/home/ialom/chain-caliper/node_modules/fabric-client/node_modules/grpc/src/client_interceptors.js:614:8)\n    at callback (/home/ialom/chain-caliper/node_modules/fabric-client/node_modules/grpc/src/client_interceptors.js:841:24)","status":500,"payload":{"type":"Buffer","data":[]},"peer":{"url":"grpc://localhost:7051","name":"localhost:7051","options":{"grpc.ssl_target_name_override":"peer0.org1.example.com","grpc.default_authority":"peer0.org1.example.com","grpc.max_receive_message_length":-1,"grpc.max_send_message_length":-1}},"isProposalResponse":true}] 
+
+2019-02-17T14:05:07+06:00 - ERROR [instantiate-chaincode.js]: Failed to instantiate chaincodes: Error: All proposals were not good
+    at instantiate (/home/ialom/chain-caliper/src/adapters/fabric/e2eUtils.js:394:15)
+    at <anonymous> 
+
+2019-02-17T14:05:07+06:00 - ERROR [fabric.js]: Fabric chaincode install failed: Error: All proposals were not good
+    at instantiate (/home/ialom/chain-caliper/src/adapters/fabric/e2eUtils.js:394:15)
+    at <anonymous> 
+
+2019-02-17T14:05:07+06:00 - ERROR [bench-flow.js]: Error: Error: All proposals were not good
+    at instantiate (/home/ialom/chain-caliper/src/adapters/fabric/e2eUtils.js:394:15)
+    at <anonymous> 
+
+2019-02-17T14:05:07+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-02-17T14:05:07+06:00 - INFO [bench-flow.js]: Executing command: docker-compose -f network/fabric-v1.2/docker-compose.yml down;docker rm $(docker ps -aq);docker rmi $(docker images dev* -q) 
+
+2019-02-17T14:05:21+06:00 - INFO [bench-flow.js]: 
+
+#######################################
+# Test summary: 0 succeeded, 0 failed #
+#######################################
+ 
+
