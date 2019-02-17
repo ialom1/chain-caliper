@@ -1,0 +1,14 @@
+Process Flow in Caliper:
+
+main.js(benchmarkConfig, networkConfig){
+    bench-flow.run(benchmarkConfig, networkConfig){
+
+        await execAsync(networkObject.caliper.command.start);
+
+        await new blockchain.init();
+        await blockchain.installSmartContract();
+        
+        await new client.init();
+        await new blockchain.prepareClients(numberOfClients);
+    }
+}
