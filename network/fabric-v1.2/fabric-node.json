@@ -41,7 +41,13 @@
       }
     ],
     "chaincodes": [
-      {"id": "fabcar", "path": "contract/fabric/simple/go", "language":"golang", "version": "v0", "channel": "mychannel"}
+      {
+        "id": "fabcar", 
+        "path": "contract/fabric/simple/go", 
+        "language":"golang", 
+        "version": "v1", 
+        "init": [""],
+        "channel": "mychannel"}
     ],
     "endorsement-policy": {
       "identities": [
@@ -58,7 +64,12 @@
           }
         }
       ],
-      "policy": { "1-of": [{"signed-by": 0}]}
+      "policy": { 
+        "1-of": [
+          {"signed-by": 0},
+          {"signed-by": 1}
+        ]
+      }
     },
     "context": {
       "init": "mychannel",
