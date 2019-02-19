@@ -1,6 +1,6 @@
 ### Process Flow in Caliper
 
-main(benchmarkConfig, networkConfig){
+benchmark.simple.main(benchmarkConfig, networkConfig){
     // caliper process begins from main.js
 
     bench-flow.run(benchmarkConfig, networkConfig){
