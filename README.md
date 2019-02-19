@@ -1,4 +1,4 @@
-Process Flow in Caliper:
+// ** Process Flow in Caliper ** //
 
 main.js(benchmarkConfig, networkConfig){
     // begining of caliper process
