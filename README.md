@@ -28,7 +28,15 @@ benchmark/simple/main.js{
             }
         }
         
-        await new client.init();
-        await new blockchain.prepareClients(numberOfClients);
+        numberOfClients = await new client.init(){
+            //  get the number of clinets for performing tests
+        }
+        await new blockchain.prepareClients(numberOfClients){
+            // method not defined in the Fabric class
+        }
+
+        await monitor.start(){
+            // starts the resource monitor
+        }
     }
 }
