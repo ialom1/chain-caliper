@@ -1,0 +1,66 @@
+2019-02-19T09:47:44+06:00 - DEBUG Successfully constructed a winston logger with configurations
+	{"debug":"log/caliper.log","info":"console"}
+
+2019-02-19T09:47:44+06:00 - INFO [bench-flow.js]: ####### Caliper Test ####### 
+
+2019-02-19T09:47:47+06:00 - INFO [bench-flow.js]: Executing command: docker-compose -f network/fabric-v1.2/dev/docker-compose.yaml up -d ca.example.com orderer.example.com peer0.org1.example.com couchdb;sleep 10s 
+
+2019-02-19T09:48:18+06:00 - INFO [create-channel.js]: Creating mychannel... 
+
+2019-02-19T09:48:19+06:00 - INFO [create-channel.js]: Created mychannel successfully 
+
+2019-02-19T09:48:19+06:00 - INFO [create-channel.js]: Sleeping 5s... 
+
+2019-02-19T09:48:24+06:00 - INFO [join-channel.js]: Joining channels... 
+
+2019-02-19T09:48:24+06:00 - INFO [join-channel.js]: Joining organization org1 to channel mychannel... 
+
+2019-02-19T09:48:25+06:00 - INFO [join-channel.js]: Successfully joined peerOrg1's peers to mychannel 
+
+2019-02-19T09:48:25+06:00 - INFO [join-channel.js]: Successfully joined mychannel 
+
+2019-02-19T09:48:25+06:00 - INFO [install-chaincode.js]: installing all chaincodes...... 
+
+2019-02-19T09:48:25+06:00 - INFO [install-chaincode.js]: Installing chaincode fabcar... 
+
+2019-02-19T09:48:25+06:00 - INFO [install-chaincode.js]: Installed chaincode fabcar successfully in all peers 
+
+2019-02-19T09:48:25+06:00 - INFO [instantiate-chaincode.js]: Instantiating chaincodes... 
+
+2019-02-19T09:48:28+06:00 - INFO [e2eUtils.js]: instantiate proposal was good 
+
+2019-02-19T09:48:28+06:00 - INFO [e2eUtils.js]: Successfully sent Proposal and received ProposalResponse 
+
+2019-02-19T09:48:31+06:00 - INFO [e2eUtils.js]: The chaincode instantiate transaction has been committed on peer localhost:7051 
+
+2019-02-19T09:48:31+06:00 - INFO [e2eUtils.js]: The chaincode instantiate transaction was valid. 
+
+2019-02-19T09:48:31+06:00 - INFO [e2eUtils.js]: Successfully sent instantiatetransaction to the orderer. 
+
+2019-02-19T09:48:31+06:00 - INFO [instantiate-chaincode.js]: Instantiated chaincode fabcar successfully 
+
+2019-02-19T09:48:31+06:00 - INFO [instantiate-chaincode.js]: Sleeping 5s... 
+
+2019-02-19T09:48:37+06:00 - INFO [bench-flow.js]: Started monitor successfully 
+
+2019-02-19T09:48:37+06:00 - INFO [bench-flow.js]: ####### Testing 'open' ####### 
+
+2019-02-19T09:48:37+06:00 - INFO [bench-flow.js]: ------ Test round 1 ------ 
+
+2019-02-19T09:48:37+06:00 - DEBUG Successfully constructed a winston logger with configurations
+	{"debug":"log/caliper.log","info":"console"}
+
+2019-02-19T09:48:37+06:00 - DEBUG Successfully constructed a winston logger with configurations
+	{"debug":"log/caliper.log","info":"console"}
+
+2019-02-19T09:48:37+06:00 - DEBUG Successfully constructed a winston logger with configurations
+	{"debug":"log/caliper.log","info":"console"}
+
+2019-02-19T09:48:37+06:00 - DEBUG Successfully constructed a winston logger with configurations
+	{"debug":"log/caliper.log","info":"console"}
+
+2019-02-19T09:48:37+06:00 - DEBUG Successfully constructed a winston logger with configurations
+	{"debug":"log/caliper.log","info":"console"}
+
+2019-02-19T09:48:38+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+

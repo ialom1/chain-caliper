@@ -7,9 +7,10 @@ main.js(benchmarkConfig, networkConfig){
             // starts the docker containers;
         }
 
+        blockchain = new Blockchain(absNetworkFile);
         // creates a corresponding blockchain object from its adapter using the given config
 
-        await new blockchain.init(){
+        await blockchain.init(){
             // uses the blockchain object to init the blockchain{
                 // creates the  channel
                 // adds the genesis block to the channel
