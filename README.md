@@ -1,7 +1,7 @@
 ### Process Flow in Caliper
 
-// begining of caliper process
-main.js(benchmarkConfig, networkConfig){
+// begining of caliper process at main.js
+main(benchmarkConfig, networkConfig){
 
     bench-flow.run(benchmarkConfig, networkConfig){
         // entire process flow is maintained from here
