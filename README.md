@@ -1,7 +1,10 @@
 Process Flow in Caliper:
 
 main.js(benchmarkConfig, networkConfig){
+    // begining of caliper process
+
     bench-flow.run(benchmarkConfig, networkConfig){
+        // entire process flow is maintained from here
 
         await execAsync(networkObject.caliper.command.start){
             // starts the docker containers;
