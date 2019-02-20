@@ -1,42 +1,62 @@
 ### Process Flow in Caliper
 
-benchmark/simple/main.js{
+benchmark/simple/main.js {  
     // caliper process begins from main.js
 
     bench-flow.run(benchmarkConfig, networkConfig){
         // entire process flow is maintained from here
 
         await execAsync(networkObject.caliper.command.start){
-            // starts the docker containers;
+            // start the docker containers
         }
 
         blockchain = new Blockchain(absNetworkFile);
-        // creates a corresponding blockchain object from its adapter using the given config
+        // create a corresponding blockchain object from its adapter using the given config
 
         await blockchain.init(){
             // uses the blockchain object to init the blockchain{
-                // creates the  channel
-                // adds the genesis block to the channel
-                // joins the peers to the channel
+                // create the  channel
+                // add the genesis block to the channel
+                // join the peers to the channel
             }
         }
         await blockchain.installSmartContract(){
             // uses the blockchain object to init the chaincode{
-                // installs the chaincode
-                // creates the chaincode containers
-                // instantiates the chaincode into all peers
+                // install the chaincode
+                // create the chaincode containers
+                // instantiate the chaincode into all peers
             }
         }
         
         numberOfClients = await new client.init(){
             //  get the number of clinets from the benchmark config file for performing tests
         }
-        await new blockchain.prepareClients(numberOfClients){
-            // method not defined in the Fabric class
+        clientArgs = await blockchain.prepareClients(numberOfClients){
+            // prepare the clients according to the blockchain requirements
+            // BUT method not defined in the Fabric class
         }
 
         await monitor.start(){
-            // starts the resource monitor
+            // starts a mechanism to monitor the resources mentioned int he benchmark config file
+        }
+
+        let allTests = configObject.test.rounds;
+        for (let test of allTests) {
+            ++testIdx;
+
+            await defaultTest(test, clientArgs, (testIdx === testNum)){
+
+            }
+        }
+
+        await monitor.stop(){
+            // stop the monitoring process
+        }
+        await report.generate(output){
+            // generate benchmark report in html
+        }
+        await execAsync(networkObject.caliper.command.end){
+            // stop the docker containers
         }
     }
 }
