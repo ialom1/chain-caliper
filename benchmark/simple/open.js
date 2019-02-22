@@ -7,14 +7,14 @@ let txnPerBatch;
 let initMoney;
 let bc, contx;
 module.exports.init = function(blockchain, context, args) {
-    if(!args.hasOwnProperty('money')) {
-        return Promise.reject(new Error('simple.open - \'money\' is missed in the arguments'));
+    if(!args.hasOwnProperty('function')) {
+        return Promise.reject(new Error('simple.open - \'function\' is missed in the arguments'));
     }
 
     if(!args.hasOwnProperty('txnPerBatch')) {
         args.txnPerBatch = 1;
     }
-    initMoney = args.money;
+    //initMoney = args.money;
     txnPerBatch = args.txnPerBatch;
     bc = blockchain;
     contx = context;
@@ -59,9 +59,8 @@ function generateWorkload() {
         let acc_id = generateAccount();
         account_array.push(acc_id);
         let acc = {
-            'verb': 'open',
-            'account': acc_id,
-            'money': initMoney
+            'function': 'initLedger',
+            'Args': '[]'
         };
         workload.push(acc);
     }
@@ -70,7 +69,7 @@ function generateWorkload() {
 
 module.exports.run = function() {
     let args = generateWorkload();
-    return bc.invokeSmartContract(contx, 'simple', 'v1.0.0', args, 100);
+    return bc.invokeSmartContract(contx, 'fabcar', 'v1', args, 100);
 };
 
 module.exports.end = function() {

@@ -185,7 +185,7 @@ async function runDuration(msg, cb, context) {
  * @return {Promise} promise object
  */
 async function doTest(msg) {
-    logger.debug('doTest() with:', msg);
+    logger.info('doTest() with:', msg);
     let cb = require(Util.resolvePath(msg.cb));
     blockchain = new bc(Util.resolvePath(msg.config));
 

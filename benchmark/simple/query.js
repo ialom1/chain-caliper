@@ -16,7 +16,7 @@ module.exports.init = function(blockchain, context, args) {
 module.exports.run = function() {
     const acc  = account_array[Math.floor(Math.random()*(account_array.length))];
 
-    return bc.queryState(contx, 'simple', 'v0', acc);
+    return bc.queryState(contx, 'fabcar', 'v1', acc);
 };
 
 module.exports.end = function() {

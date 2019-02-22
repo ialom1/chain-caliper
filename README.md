@@ -37,7 +37,7 @@ benchmark/simple/main.js {
         }
 
         await monitor.start(){
-            // starts a mechanism to monitor the resources mentioned int he benchmark config file
+            // starts a mechanism to monitor the resources mentioned in the benchmark config file
         }
 
         let allTests = configObject.test.rounds;
@@ -45,7 +45,11 @@ benchmark/simple/main.js {
             ++testIdx;
 
             await defaultTest(test, clientArgs, (testIdx === testNum)){
-
+                // testing begins here
+                // Generate the message containig parameters like arguments, test, callback function etc
+                // demo.startWatch(client) {
+                    informs the monitor to watch the client
+                }                       
             }
         }
 

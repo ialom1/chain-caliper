@@ -160,6 +160,7 @@ class Fabric extends BlockchainInterface{
      * @return {Promise<object>} The promise for the result of the execution.
      */
     async invokeSmartContract(context, contractID, contractVer, args, timeout) {
+
         let promises = [];
         args.forEach((item, index)=>{
             try {
