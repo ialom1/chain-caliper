@@ -46,7 +46,9 @@ benchmark/simple/main.js {
 
             await defaultTest(test, clientArgs, (testIdx === testNum)){
                 // testing begins here
+
                 // Generate the message containig parameters like arguments, test, callback function etc
+                
                 // demo.startWatch(client) {
                     informs the monitor to watch the client
                 }                       
