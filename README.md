@@ -1,4 +1,4 @@
-### Process Flow in Caliper
+### Process Flow in Hyperledger Caliper
 
 benchmark/simple/main.js {  
     // caliper process begins from main.js
@@ -27,7 +27,7 @@ benchmark/simple/main.js {
                 // instantiate the chaincode into all peers
             }
         }
-        
+
         numberOfClients = await new client.init(){
             //  get the number of clinets from the benchmark config file for performing tests
         }
@@ -48,7 +48,7 @@ benchmark/simple/main.js {
                 // testing begins here
 
                 // Generate the message containig parameters like arguments, test, callback function etc
-                
+
                 // demo.startWatch(client) {
                     informs the monitor to watch the client
                 }                       
