@@ -270,7 +270,6 @@ async function defaultTest(args, clientArgs, final) {
         test.roundIdx = round; // propagate round ID to clients
         demo.startWatch(client);
         try {
-
             await client.startTest(test, clientArgs, processResult, testLabel);
 
             demo.pauseWatch();
