@@ -9,14 +9,22 @@ module.exports.init = function(blockchain, context, args) {
     const open = require('./open.js');
     bc       = blockchain;
     contx    = context;
-    account_array = open.account_array;
+    // account_array = open.account_array;
+    account_array = [
+      {chaincodeId: 'fabcar', fcn: 'queryCar', args: ['CAR1']},
+      {chaincodeId: 'fabcar', fcn: 'queryCar', args: ['CAR2']},
+      {chaincodeId: 'fabcar', fcn: 'queryCar', args: ['CAR4']},
+      {chaincodeId: 'fabcar', fcn: 'queryCar', args: ['CAR6']},
+      {chaincodeId: 'fabcar', fcn: 'queryCar', args: ['CAR8']},
+      {chaincodeId: 'fabcar', fcn: 'queryAllCars', args: []}
+    ];
     return Promise.resolve();
 };
 
 module.exports.run = function() {
     const acc  = account_array[Math.floor(Math.random()*(account_array.length))];
-
-    return bc.queryState(contx, 'fabcar', 'v1', acc);
+    //console.log('*** from query', acc)
+    return bc.queryState(contx, 'fabcar', 'v1', acc.args, acc.fcn);
 };
 
 module.exports.end = function() {

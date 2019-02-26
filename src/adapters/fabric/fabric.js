@@ -203,7 +203,7 @@ class Fabric extends BlockchainInterface{
      * @param {Boolean} consensus boolean flag to indicate if the query is to be recorded ont the ledger or not
      * @return {Promise<object>} The promise for the result of the execution.
      */
-    queryState(context, contractID, contractVer, arg, fcn = 'query', consensus) {
+    queryState(context, contractID, contractVer, arg, fcn, consensus) {
 
         // Branch on interaction type
         if(context.gateway) {

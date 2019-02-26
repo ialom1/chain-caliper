@@ -1,0 +1,1025 @@
+2019-02-26T19:48:04+06:00 - DEBUG Successfully constructed a winston logger with configurations
+	{"debug":"log/caliper.log","info":"console"}
+
+2019-02-26T19:48:04+06:00 - INFO [bench-flow.js]: ####### Caliper Test ####### 
+
+2019-02-26T19:48:06+06:00 - INFO [bench-flow.js]: Executing command: docker-compose -f network/fabric-v1.2/dev/docker-compose.yaml up -d ca.example.com orderer.example.com peer0.org1.example.com couchdb;sleep 10s 
+
+2019-02-26T19:48:32+06:00 - INFO [create-channel.js]: Creating mychannel... 
+
+2019-02-26T19:48:33+06:00 - INFO [create-channel.js]: Created mychannel successfully 
+
+2019-02-26T19:48:33+06:00 - INFO [create-channel.js]: Sleeping 5s... 
+
+2019-02-26T19:48:38+06:00 - INFO [join-channel.js]: Joining channels... 
+
+2019-02-26T19:48:38+06:00 - INFO [join-channel.js]: Joining organization org1 to channel mychannel... 
+
+2019-02-26T19:48:39+06:00 - INFO [join-channel.js]: Successfully joined peerOrg1's peers to mychannel 
+
+2019-02-26T19:48:39+06:00 - INFO [join-channel.js]: Successfully joined mychannel 
+
+2019-02-26T19:48:39+06:00 - INFO [install-chaincode.js]: installing all chaincodes...... 
+
+2019-02-26T19:48:39+06:00 - INFO [install-chaincode.js]: Installing chaincode fabcar... 
+
+2019-02-26T19:48:39+06:00 - INFO [install-chaincode.js]: Installed chaincode fabcar successfully in all peers 
+
+2019-02-26T19:48:39+06:00 - INFO [instantiate-chaincode.js]: Instantiating chaincodes... 
+
+2019-02-26T19:48:42+06:00 - INFO [e2eUtils.js]: instantiate proposal was good 
+
+2019-02-26T19:48:42+06:00 - INFO [e2eUtils.js]: Successfully sent Proposal and received ProposalResponse 
+
+2019-02-26T19:48:45+06:00 - INFO [e2eUtils.js]: The chaincode instantiate transaction has been committed on peer localhost:7051 
+
+2019-02-26T19:48:45+06:00 - INFO [e2eUtils.js]: The chaincode instantiate transaction was valid. 
+
+2019-02-26T19:48:45+06:00 - INFO [e2eUtils.js]: Successfully sent instantiatetransaction to the orderer. 
+
+2019-02-26T19:48:45+06:00 - INFO [instantiate-chaincode.js]: Instantiated chaincode fabcar successfully 
+
+2019-02-26T19:48:45+06:00 - INFO [instantiate-chaincode.js]: Sleeping 5s... 
+
+2019-02-26T19:48:50+06:00 - INFO [bench-flow.js]: Started monitor successfully 
+
+2019-02-26T19:48:50+06:00 - INFO [bench-flow.js]: ####### Testing 'open' ####### 
+
+2019-02-26T19:48:50+06:00 - INFO [bench-flow.js]: ------ Test round 1 ------ 
+
+2019-02-26T19:48:51+06:00 - DEBUG Successfully constructed a winston logger with configurations
+	{"debug":"log/caliper.log","info":"console"}
+
+2019-02-26T19:48:51+06:00 - DEBUG Successfully constructed a winston logger with configurations
+	{"debug":"log/caliper.log","info":"console"}
+
+2019-02-26T19:48:51+06:00 - DEBUG Successfully constructed a winston logger with configurations
+	{"debug":"log/caliper.log","info":"console"}
+
+2019-02-26T19:48:51+06:00 - DEBUG Successfully constructed a winston logger with configurations
+	{"debug":"log/caliper.log","info":"console"}
+
+2019-02-26T19:48:51+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-02-26T19:48:51+06:00 - DEBUG Successfully constructed a winston logger with configurations
+	{"debug":"log/caliper.log","info":"console"}
+
+2019-02-26T19:48:52+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-02-26T19:48:54+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-02-26T19:48:55+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-02-26T19:48:56+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-02-26T19:48:51+06:00 - INFO [local-client.js]: doTest() with:
+	{"type":"test","label":"open","rateControl":{"type":"fixed-rate","opts":{"tps":50}},"trim":0,"args":{"function":"initLedger","Args":null},"cb":"benchmark/simple/open.js","config":"network/fabric-v1.2/dev/fabric-go.json","numb":200,"txFile":{"roundLength":3,"roundCurrent":0,"readWrite":"no"},"roundIdx":1,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":4}
+
+2019-02-26T19:48:53+06:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2019-02-26T19:48:55+06:00 - DEBUG [fabric.js]: getContext) name: open clientIndex: 4 txFile: {"roundLength":3,"roundCurrent":0,"readWrite":"no","name":"open"} 
+
+2019-02-26T19:48:51+06:00 - INFO [local-client.js]: doTest() with:
+	{"type":"test","label":"open","rateControl":{"type":"fixed-rate","opts":{"tps":50}},"trim":0,"args":{"function":"initLedger","Args":null},"cb":"benchmark/simple/open.js","config":"network/fabric-v1.2/dev/fabric-go.json","numb":200,"txFile":{"roundLength":3,"roundCurrent":0,"readWrite":"no"},"roundIdx":1,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":3}
+
+2019-02-26T19:48:53+06:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2019-02-26T19:48:55+06:00 - DEBUG [fabric.js]: getContext) name: open clientIndex: 3 txFile: {"roundLength":3,"roundCurrent":0,"readWrite":"no","name":"open"} 
+
+2019-02-26T19:48:56+06:00 - DEBUG [local-client.js]: Info: client 17742 start test runFixedNumber():opening accounts 
+
+2019-02-26T19:48:56+06:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":50}}
+
+2019-02-26T19:48:51+06:00 - INFO [local-client.js]: doTest() with:
+	{"type":"test","label":"open","rateControl":{"type":"fixed-rate","opts":{"tps":50}},"trim":0,"args":{"function":"initLedger","Args":null},"cb":"benchmark/simple/open.js","config":"network/fabric-v1.2/dev/fabric-go.json","numb":200,"txFile":{"roundLength":3,"roundCurrent":0,"readWrite":"no"},"roundIdx":1,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":1}
+
+2019-02-26T19:48:53+06:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2019-02-26T19:48:55+06:00 - DEBUG [fabric.js]: getContext) name: open clientIndex: 1 txFile: {"roundLength":3,"roundCurrent":0,"readWrite":"no","name":"open"} 
+
+2019-02-26T19:48:56+06:00 - DEBUG [local-client.js]: Info: client 17734 start test runFixedNumber():opening accounts 
+
+2019-02-26T19:48:56+06:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":50}}
+
+2019-02-26T19:48:57+06:00 - DEBUG [local-client.js]: Info: client 17727 start test runFixedNumber():opening accounts 
+
+2019-02-26T19:48:57+06:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":50}}
+
+2019-02-26T19:48:51+06:00 - INFO [local-client.js]: doTest() with:
+	{"type":"test","label":"open","rateControl":{"type":"fixed-rate","opts":{"tps":50}},"trim":0,"args":{"function":"initLedger","Args":null},"cb":"benchmark/simple/open.js","config":"network/fabric-v1.2/dev/fabric-go.json","numb":200,"txFile":{"roundLength":3,"roundCurrent":0,"readWrite":"no"},"roundIdx":1,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":2}
+
+2019-02-26T19:48:53+06:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2019-02-26T19:48:55+06:00 - DEBUG [fabric.js]: getContext) name: open clientIndex: 2 txFile: {"roundLength":3,"roundCurrent":0,"readWrite":"no","name":"open"} 
+
+2019-02-26T19:48:57+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-02-26T19:48:57+06:00 - DEBUG [local-client.js]: Info: client 17733 start test runFixedNumber():opening accounts 
+
+2019-02-26T19:48:57+06:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":50}}
+
+2019-02-26T19:48:51+06:00 - INFO [local-client.js]: doTest() with:
+	{"type":"test","label":"open","rateControl":{"type":"fixed-rate","opts":{"tps":50}},"trim":0,"args":{"function":"initLedger","Args":null},"cb":"benchmark/simple/open.js","config":"network/fabric-v1.2/dev/fabric-go.json","numb":200,"txFile":{"roundLength":3,"roundCurrent":0,"readWrite":"no"},"roundIdx":1,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":0}
+
+2019-02-26T19:48:53+06:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2019-02-26T19:48:56+06:00 - DEBUG [fabric.js]: getContext) name: open clientIndex: 0 txFile: {"roundLength":3,"roundCurrent":0,"readWrite":"no","name":"open"} 
+
+2019-02-26T19:48:58+06:00 - DEBUG [local-client.js]: Info: client 17722 start test runFixedNumber():opening accounts 
+
+2019-02-26T19:48:58+06:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":50}}
+
+2019-02-26T19:48:58+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 30 Succ: 0 Fail:0 Unfinished:30 
+
+2019-02-26T19:48:59+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 78 Succ: 13 Fail:0 Unfinished:65 
+
+2019-02-26T19:49:00+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 128 Succ: 26 Fail:0 Unfinished:102 
+
+2019-02-26T19:49:01+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 179 Succ: 48 Fail:0 Unfinished:131 
+
+2019-02-26T19:49:02+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 252 Succ: 71 Fail:0 Unfinished:181 
+
+2019-02-26T19:49:03+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 302 Succ: 87 Fail:0 Unfinished:215 
+
+2019-02-26T19:49:04+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 353 Succ: 105 Fail:0 Unfinished:248 
+
+2019-02-26T19:49:06+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 373 Succ: 109 Fail:0 Unfinished:264 
+
+2019-02-26T19:49:07+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 473 Succ: 148 Fail:0 Unfinished:325 
+
+2019-02-26T19:49:08+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 523 Succ: 164 Fail:0 Unfinished:359 
+
+2019-02-26T19:49:09+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 573 Succ: 182 Fail:0 Unfinished:391 
+
+2019-02-26T19:49:10+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 583 Succ: 186 Fail:0 Unfinished:397 
+
+2019-02-26T19:49:11+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 687 Succ: 211 Fail:0 Unfinished:476 
+
+2019-02-26T19:49:12+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 737 Succ: 232 Fail:0 Unfinished:505 
+
+2019-02-26T19:49:13+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 787 Succ: 246 Fail:0 Unfinished:541 
+
+2019-02-26T19:49:14+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 837 Succ: 268 Fail:0 Unfinished:569 
+
+2019-02-26T19:49:15+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 889 Succ: 285 Fail:0 Unfinished:604 
+
+2019-02-26T19:49:16+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 940 Succ: 299 Fail:0 Unfinished:641 
+
+2019-02-26T19:49:17+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 986 Succ: 317 Fail:0 Unfinished:669 
+
+2019-02-26T19:49:18+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 339 Fail:0 Unfinished:661 
+
+2019-02-26T19:49:19+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 376 Fail:0 Unfinished:624 
+
+2019-02-26T19:49:20+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 410 Fail:0 Unfinished:590 
+
+2019-02-26T19:49:21+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 447 Fail:0 Unfinished:553 
+
+2019-02-26T19:49:22+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 478 Fail:0 Unfinished:522 
+
+2019-02-26T19:49:23+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 517 Fail:0 Unfinished:483 
+
+2019-02-26T19:49:24+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 549 Fail:0 Unfinished:451 
+
+2019-02-26T19:49:25+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 579 Fail:0 Unfinished:421 
+
+2019-02-26T19:49:26+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 612 Fail:0 Unfinished:388 
+
+2019-02-26T19:49:27+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 647 Fail:0 Unfinished:353 
+
+2019-02-26T19:49:28+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 669 Fail:0 Unfinished:331 
+
+2019-02-26T19:49:29+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 700 Fail:0 Unfinished:300 
+
+2019-02-26T19:49:30+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 732 Fail:0 Unfinished:268 
+
+2019-02-26T19:49:31+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 766 Fail:0 Unfinished:234 
+
+2019-02-26T19:49:32+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 798 Fail:0 Unfinished:202 
+
+2019-02-26T19:49:33+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 827 Fail:0 Unfinished:173 
+
+2019-02-26T19:49:34+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 860 Fail:0 Unfinished:140 
+
+2019-02-26T19:49:35+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 896 Fail:0 Unfinished:104 
+
+2019-02-26T19:49:36+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 927 Fail:0 Unfinished:73 
+
+2019-02-26T19:49:37+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 958 Fail:0 Unfinished:42 
+
+2019-02-26T19:49:38+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 985 Fail:0 Unfinished:15 
+
+2019-02-26T19:49:39+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 1000 Fail:0 Unfinished:0 
+
+2019-02-26T19:49:39+06:00 - DEBUG [bench-flow.js]: r.create.max: 1551188958.108 r.create.min: 1551188936.783 r.final.max: 1551188978.584 r.final.min: 1551188938.25 
+
+2019-02-26T19:49:39+06:00 - DEBUG [bench-flow.js]: sendTransactionProposal: 15.688ms length: 1000 
+
+2019-02-26T19:49:39+06:00 - DEBUG [bench-flow.js]: sendTransaction: 12.522ms 
+
+2019-02-26T19:49:39+06:00 - DEBUG [bench-flow.js]: invokeLantency: 0ms 
+
+2019-02-26T19:49:39+06:00 - INFO [bench-flow.js]: ###test result:### 
+
+2019-02-26T19:49:39+06:00 - INFO [bench-flow.js]: 
++------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|------|------|------|-----------|-------------|-------------|-------------|------------|
+| open | 1000 | 0    | 46.9 tps  | 22.07 s     | 1.01 s      | 14.08 s     | 23.9 tps   |
++------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-02-26T19:49:39+06:00 - INFO [bench-flow.js]: ### resource stats ### 
+
+2019-02-26T19:49:39+06:00 - INFO [bench-flow.js]: 
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+| TYPE    | NAME                              | Memory(max) | Memory(avg) | CPU(max) | CPU(avg) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Process | node local-client.js(avg)         | 136.7MB     | 132.3MB     | 70.25%   | 17.37%   | -          | -           | -         | -          |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...ar-v1 | 8.0MB       | 7.9MB       | 65.50%   | 18.01%   | 3.5MB      | 3.2MB       | 424.0KB   | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org1.example.com            | 70.1MB      | 53.7MB      | 131.57%  | 60.68%   | 12.3MB     | 7.6MB       | 600.0KB   | 12.3MB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | orderer.example.com               | 22.9MB      | 20.6MB      | 74.45%   | 18.78%   | 4.0MB      | 4.2MB       | 992.0KB   | 8.9MB      |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.example.com                    | 9.8MB       | 9.8MB       | 0.01%    | 0.00%    | 273B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb                           | 120.0MB     | 111.8MB     | 118.05%  | 81.71%   | 1.6MB      | 3.9MB       | 32.0KB    | 11.3MB     |
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+ 
+
+2019-02-26T19:49:39+06:00 - INFO [bench-flow.js]: ------ Passed 'open' testing ------ 
+
+2019-02-26T19:49:39+06:00 - INFO [bench-flow.js]: Waiting 5 seconds for the next round... 
+
+2019-02-26T19:49:40+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 1000 Fail:0 Unfinished:0 
+
+2019-02-26T19:49:41+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 1000 Fail:0 Unfinished:0 
+
+2019-02-26T19:49:42+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 1000 Fail:0 Unfinished:0 
+
+2019-02-26T19:49:43+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 1000 Fail:0 Unfinished:0 
+
+2019-02-26T19:49:44+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 1000 Fail:0 Unfinished:0 
+
+2019-02-26T19:49:44+06:00 - INFO [bench-flow.js]: ------ Test round 2 ------ 
+
+2019-02-26T19:49:44+06:00 - INFO [local-client.js]: doTest() with:
+	{"type":"test","label":"open","rateControl":{"type":"fixed-rate","opts":{"tps":100}},"trim":0,"args":{"function":"initLedger","Args":null},"cb":"benchmark/simple/open.js","config":"network/fabric-v1.2/dev/fabric-go.json","numb":200,"txFile":{"roundLength":3,"roundCurrent":1,"readWrite":"no"},"roundIdx":2,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":1}
+
+2019-02-26T19:49:44+06:00 - INFO [local-client.js]: doTest() with:
+	{"type":"test","label":"open","rateControl":{"type":"fixed-rate","opts":{"tps":100}},"trim":0,"args":{"function":"initLedger","Args":null},"cb":"benchmark/simple/open.js","config":"network/fabric-v1.2/dev/fabric-go.json","numb":200,"txFile":{"roundLength":3,"roundCurrent":1,"readWrite":"no"},"roundIdx":2,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":0}
+
+2019-02-26T19:49:44+06:00 - INFO [local-client.js]: doTest() with:
+	{"type":"test","label":"open","rateControl":{"type":"fixed-rate","opts":{"tps":100}},"trim":0,"args":{"function":"initLedger","Args":null},"cb":"benchmark/simple/open.js","config":"network/fabric-v1.2/dev/fabric-go.json","numb":200,"txFile":{"roundLength":3,"roundCurrent":1,"readWrite":"no"},"roundIdx":2,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":4}
+
+2019-02-26T19:49:44+06:00 - INFO [local-client.js]: doTest() with:
+	{"type":"test","label":"open","rateControl":{"type":"fixed-rate","opts":{"tps":100}},"trim":0,"args":{"function":"initLedger","Args":null},"cb":"benchmark/simple/open.js","config":"network/fabric-v1.2/dev/fabric-go.json","numb":200,"txFile":{"roundLength":3,"roundCurrent":1,"readWrite":"no"},"roundIdx":2,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":3}
+
+2019-02-26T19:49:44+06:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2019-02-26T19:49:44+06:00 - DEBUG [fabric.js]: getContext) name: open clientIndex: 0 txFile: {"roundLength":3,"roundCurrent":1,"readWrite":"no","name":"open"} 
+
+2019-02-26T19:49:44+06:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2019-02-26T19:49:44+06:00 - DEBUG [fabric.js]: getContext) name: open clientIndex: 1 txFile: {"roundLength":3,"roundCurrent":1,"readWrite":"no","name":"open"} 
+
+2019-02-26T19:49:44+06:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2019-02-26T19:49:44+06:00 - DEBUG [fabric.js]: getContext) name: open clientIndex: 4 txFile: {"roundLength":3,"roundCurrent":1,"readWrite":"no","name":"open"} 
+
+2019-02-26T19:49:44+06:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2019-02-26T19:49:44+06:00 - DEBUG [fabric.js]: getContext) name: open clientIndex: 3 txFile: {"roundLength":3,"roundCurrent":1,"readWrite":"no","name":"open"} 
+
+2019-02-26T19:49:44+06:00 - INFO [local-client.js]: doTest() with:
+	{"type":"test","label":"open","rateControl":{"type":"fixed-rate","opts":{"tps":100}},"trim":0,"args":{"function":"initLedger","Args":null},"cb":"benchmark/simple/open.js","config":"network/fabric-v1.2/dev/fabric-go.json","numb":200,"txFile":{"roundLength":3,"roundCurrent":1,"readWrite":"no"},"roundIdx":2,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":2}
+
+2019-02-26T19:49:44+06:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2019-02-26T19:49:44+06:00 - DEBUG [fabric.js]: getContext) name: open clientIndex: 2 txFile: {"roundLength":3,"roundCurrent":1,"readWrite":"no","name":"open"} 
+
+2019-02-26T19:49:44+06:00 - DEBUG [local-client.js]: Info: client 17722 start test runFixedNumber():opening accounts 
+
+2019-02-26T19:49:44+06:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":100}}
+
+2019-02-26T19:49:44+06:00 - DEBUG [local-client.js]: Info: client 17727 start test runFixedNumber():opening accounts 
+
+2019-02-26T19:49:44+06:00 - DEBUG [local-client.js]: Info: client 17742 start test runFixedNumber():opening accounts 
+
+2019-02-26T19:49:44+06:00 - DEBUG [local-client.js]: Info: client 17734 start test runFixedNumber():opening accounts 
+
+2019-02-26T19:49:44+06:00 - DEBUG [local-client.js]: Info: client 17733 start test runFixedNumber():opening accounts 
+
+2019-02-26T19:49:44+06:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":100}}
+
+2019-02-26T19:49:44+06:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":100}}
+
+2019-02-26T19:49:44+06:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":100}}
+
+2019-02-26T19:49:44+06:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":100}}
+
+2019-02-26T19:49:45+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 1000 Fail:0 Unfinished:0 
+
+2019-02-26T19:49:46+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1091 Succ: 1000 Fail:0 Unfinished:91 
+
+2019-02-26T19:49:47+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1133 Succ: 1000 Fail:0 Unfinished:133 
+
+2019-02-26T19:49:48+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1328 Succ: 1005 Fail:0 Unfinished:323 
+
+2019-02-26T19:49:49+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1428 Succ: 1020 Fail:0 Unfinished:408 
+
+2019-02-26T19:49:50+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1532 Succ: 1020 Fail:0 Unfinished:512 
+
+2019-02-26T19:49:51+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1617 Succ: 1020 Fail:0 Unfinished:597 
+
+2019-02-26T19:49:52+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1756 Succ: 1025 Fail:0 Unfinished:731 
+
+2019-02-26T19:49:53+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1856 Succ: 1030 Fail:0 Unfinished:826 
+
+2019-02-26T19:49:55+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1856 Succ: 1030 Fail:0 Unfinished:826 
+
+2019-02-26T19:49:56+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1999 Succ: 1030 Fail:0 Unfinished:969 
+
+2019-02-26T19:49:57+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1999 Succ: 1030 Fail:0 Unfinished:969 
+
+2019-02-26T19:49:58+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1058 Fail:0 Unfinished:942 
+
+2019-02-26T19:49:59+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1072 Fail:0 Unfinished:928 
+
+2019-02-26T19:50:00+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1097 Fail:0 Unfinished:903 
+
+2019-02-26T19:50:01+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1120 Fail:0 Unfinished:880 
+
+2019-02-26T19:50:02+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1146 Fail:0 Unfinished:854 
+
+2019-02-26T19:50:03+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1158 Fail:0 Unfinished:842 
+
+2019-02-26T19:50:04+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1207 Fail:0 Unfinished:793 
+
+2019-02-26T19:50:05+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1233 Fail:0 Unfinished:767 
+
+2019-02-26T19:50:06+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1266 Fail:0 Unfinished:734 
+
+2019-02-26T19:50:07+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1309 Fail:0 Unfinished:691 
+
+2019-02-26T19:50:08+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1338 Fail:0 Unfinished:662 
+
+2019-02-26T19:50:09+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1357 Fail:0 Unfinished:643 
+
+2019-02-26T19:50:10+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1394 Fail:0 Unfinished:606 
+
+2019-02-26T19:50:11+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1423 Fail:0 Unfinished:577 
+
+2019-02-26T19:50:12+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1455 Fail:0 Unfinished:545 
+
+2019-02-26T19:50:13+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1489 Fail:0 Unfinished:511 
+
+2019-02-26T19:50:14+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1523 Fail:0 Unfinished:477 
+
+2019-02-26T19:50:15+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1548 Fail:0 Unfinished:452 
+
+2019-02-26T19:50:16+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1583 Fail:0 Unfinished:417 
+
+2019-02-26T19:50:17+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1610 Fail:0 Unfinished:390 
+
+2019-02-26T19:50:18+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1630 Fail:0 Unfinished:370 
+
+2019-02-26T19:50:19+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1652 Fail:0 Unfinished:348 
+
+2019-02-26T19:50:20+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1684 Fail:0 Unfinished:316 
+
+2019-02-26T19:50:21+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1714 Fail:0 Unfinished:286 
+
+2019-02-26T19:50:22+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1744 Fail:0 Unfinished:256 
+
+2019-02-26T19:50:23+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1790 Fail:0 Unfinished:210 
+
+2019-02-26T19:50:24+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1810 Fail:0 Unfinished:190 
+
+2019-02-26T19:50:25+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1850 Fail:0 Unfinished:150 
+
+2019-02-26T19:50:26+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1883 Fail:0 Unfinished:117 
+
+2019-02-26T19:50:27+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1910 Fail:0 Unfinished:90 
+
+2019-02-26T19:50:28+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1950 Fail:0 Unfinished:50 
+
+2019-02-26T19:50:29+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1970 Fail:0 Unfinished:30 
+
+2019-02-26T19:50:30+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1980 Fail:0 Unfinished:20 
+
+2019-02-26T19:50:31+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1990 Fail:0 Unfinished:10 
+
+2019-02-26T19:50:32+06:00 - DEBUG [bench-flow.js]: r.create.max: 1551188995.745 r.create.min: 1551188984.89 r.final.max: 1551189030.924 r.final.min: 1551188986.933 
+
+2019-02-26T19:50:32+06:00 - DEBUG [bench-flow.js]: sendTransactionProposal: 17.976ms length: 1000 
+
+2019-02-26T19:50:32+06:00 - DEBUG [bench-flow.js]: sendTransaction: 20.121ms 
+
+2019-02-26T19:50:32+06:00 - DEBUG [bench-flow.js]: invokeLantency: 0ms 
+
+2019-02-26T19:50:32+06:00 - INFO [bench-flow.js]: ###test result:### 
+
+2019-02-26T19:50:32+06:00 - INFO [bench-flow.js]: 
++------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|------|------|------|-----------|-------------|-------------|-------------|------------|
+| open | 1000 | 0    | 92.1 tps  | 39.96 s     | 1.98 s      | 23.01 s     | 21.7 tps   |
++------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-02-26T19:50:32+06:00 - INFO [bench-flow.js]: ### resource stats ### 
+
+2019-02-26T19:50:32+06:00 - INFO [bench-flow.js]: 
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+| TYPE    | NAME                              | Memory(max) | Memory(avg) | CPU(max) | CPU(avg) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Process | node local-client.js(avg)         | 124.8MB     | 120.0MB     | 31.92%   | 6.90%    | -          | -           | -         | -          |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...ar-v1 | 10.9MB      | 10.5MB      | 83.47%   | 12.54%   | 1.9MB      | 1.8MB       | 256.0KB   | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org1.example.com            | 94.8MB      | 89.2MB      | 119.62%  | 51.33%   | 10.1MB     | 5.7MB       | 8.0KB     | 12.2MB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | orderer.example.com               | 35.4MB      | 33.0MB      | 119.58%  | 17.19%   | 3.4MB      | 3.7MB       | 56.0KB    | 8.4MB      |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.example.com                    | 10.1MB      | 9.9MB       | 0.94%    | 0.04%    | 273B       | 0B          | 648.0KB   | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb                           | 150.8MB     | 135.4MB     | 149.65%  | 87.11%   | 1.8MB      | 3.7MB       | 0B        | 23.8MB     |
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+ 
+
+2019-02-26T19:50:32+06:00 - INFO [bench-flow.js]: ------ Passed 'open' testing ------ 
+
+2019-02-26T19:50:32+06:00 - INFO [bench-flow.js]: Waiting 5 seconds for the next round... 
+
+2019-02-26T19:50:32+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 2000 Fail:0 Unfinished:0 
+
+2019-02-26T19:50:33+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 2000 Fail:0 Unfinished:0 
+
+2019-02-26T19:50:34+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 2000 Fail:0 Unfinished:0 
+
+2019-02-26T19:50:35+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 2000 Fail:0 Unfinished:0 
+
+2019-02-26T19:50:36+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 2000 Fail:0 Unfinished:0 
+
+2019-02-26T19:50:37+06:00 - INFO [bench-flow.js]: ------ Test round 3 ------ 
+
+2019-02-26T19:50:37+06:00 - INFO [local-client.js]: doTest() with:
+	{"type":"test","label":"open","rateControl":{"type":"fixed-rate","opts":{"tps":150}},"trim":0,"args":{"function":"initLedger","Args":null},"cb":"benchmark/simple/open.js","config":"network/fabric-v1.2/dev/fabric-go.json","numb":200,"txFile":{"roundLength":3,"roundCurrent":2,"readWrite":"no"},"roundIdx":3,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":0}
+
+2019-02-26T19:50:37+06:00 - INFO [local-client.js]: doTest() with:
+	{"type":"test","label":"open","rateControl":{"type":"fixed-rate","opts":{"tps":150}},"trim":0,"args":{"function":"initLedger","Args":null},"cb":"benchmark/simple/open.js","config":"network/fabric-v1.2/dev/fabric-go.json","numb":200,"txFile":{"roundLength":3,"roundCurrent":2,"readWrite":"no"},"roundIdx":3,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":1}
+
+2019-02-26T19:50:37+06:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2019-02-26T19:50:37+06:00 - DEBUG [fabric.js]: getContext) name: open clientIndex: 0 txFile: {"roundLength":3,"roundCurrent":2,"readWrite":"no","name":"open"} 
+
+2019-02-26T19:50:37+06:00 - INFO [local-client.js]: doTest() with:
+	{"type":"test","label":"open","rateControl":{"type":"fixed-rate","opts":{"tps":150}},"trim":0,"args":{"function":"initLedger","Args":null},"cb":"benchmark/simple/open.js","config":"network/fabric-v1.2/dev/fabric-go.json","numb":200,"txFile":{"roundLength":3,"roundCurrent":2,"readWrite":"no"},"roundIdx":3,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":2}
+
+2019-02-26T19:50:37+06:00 - INFO [local-client.js]: doTest() with:
+	{"type":"test","label":"open","rateControl":{"type":"fixed-rate","opts":{"tps":150}},"trim":0,"args":{"function":"initLedger","Args":null},"cb":"benchmark/simple/open.js","config":"network/fabric-v1.2/dev/fabric-go.json","numb":200,"txFile":{"roundLength":3,"roundCurrent":2,"readWrite":"no"},"roundIdx":3,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":4}
+
+2019-02-26T19:50:37+06:00 - INFO [local-client.js]: doTest() with:
+	{"type":"test","label":"open","rateControl":{"type":"fixed-rate","opts":{"tps":150}},"trim":0,"args":{"function":"initLedger","Args":null},"cb":"benchmark/simple/open.js","config":"network/fabric-v1.2/dev/fabric-go.json","numb":200,"txFile":{"roundLength":3,"roundCurrent":2,"readWrite":"no"},"roundIdx":3,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":3}
+
+2019-02-26T19:50:37+06:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2019-02-26T19:50:37+06:00 - DEBUG [fabric.js]: getContext) name: open clientIndex: 2 txFile: {"roundLength":3,"roundCurrent":2,"readWrite":"no","name":"open"} 
+
+2019-02-26T19:50:37+06:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2019-02-26T19:50:37+06:00 - DEBUG [fabric.js]: getContext) name: open clientIndex: 3 txFile: {"roundLength":3,"roundCurrent":2,"readWrite":"no","name":"open"} 
+
+2019-02-26T19:50:37+06:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2019-02-26T19:50:37+06:00 - DEBUG [fabric.js]: getContext) name: open clientIndex: 1 txFile: {"roundLength":3,"roundCurrent":2,"readWrite":"no","name":"open"} 
+
+2019-02-26T19:50:37+06:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2019-02-26T19:50:37+06:00 - DEBUG [fabric.js]: getContext) name: open clientIndex: 4 txFile: {"roundLength":3,"roundCurrent":2,"readWrite":"no","name":"open"} 
+
+2019-02-26T19:50:37+06:00 - DEBUG [local-client.js]: Info: client 17727 start test runFixedNumber():opening accounts 
+
+2019-02-26T19:50:37+06:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":150}}
+
+2019-02-26T19:50:37+06:00 - DEBUG [local-client.js]: Info: client 17733 start test runFixedNumber():opening accounts 
+
+2019-02-26T19:50:37+06:00 - DEBUG [local-client.js]: Info: client 17722 start test runFixedNumber():opening accounts 
+
+2019-02-26T19:50:37+06:00 - DEBUG [local-client.js]: Info: client 17742 start test runFixedNumber():opening accounts 
+
+2019-02-26T19:50:37+06:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":150}}
+
+2019-02-26T19:50:37+06:00 - DEBUG [local-client.js]: Info: client 17734 start test runFixedNumber():opening accounts 
+
+2019-02-26T19:50:37+06:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":150}}
+
+2019-02-26T19:50:37+06:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":150}}
+
+2019-02-26T19:50:37+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 2000 Fail:0 Unfinished:0 
+
+2019-02-26T19:50:37+06:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":150}}
+
+2019-02-26T19:50:38+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2025 Succ: 2000 Fail:0 Unfinished:25 
+
+2019-02-26T19:50:40+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2242 Succ: 2000 Fail:0 Unfinished:242 
+
+2019-02-26T19:50:41+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2521 Succ: 2019 Fail:0 Unfinished:502 
+
+2019-02-26T19:50:42+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2521 Succ: 2019 Fail:0 Unfinished:502 
+
+2019-02-26T19:50:43+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2604 Succ: 2019 Fail:0 Unfinished:585 
+
+2019-02-26T19:50:40+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2851 Succ: 2020 Fail:0 Unfinished:831 
+
+2019-02-26T19:50:41+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2859 Succ: 2020 Fail:0 Unfinished:839 
+
+2019-02-26T19:50:42+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2870 Succ: 2020 Fail:0 Unfinished:850 
+
+2019-02-26T19:50:44+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2903 Succ: 2020 Fail:0 Unfinished:883 
+
+2019-02-26T19:50:45+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2020 Fail:0 Unfinished:980 
+
+2019-02-26T19:50:46+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2020 Fail:0 Unfinished:980 
+
+2019-02-26T19:50:47+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2027 Fail:0 Unfinished:973 
+
+2019-02-26T19:50:48+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2050 Fail:0 Unfinished:950 
+
+2019-02-26T19:50:49+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2070 Fail:0 Unfinished:930 
+
+2019-02-26T19:50:50+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2080 Fail:0 Unfinished:920 
+
+2019-02-26T19:50:51+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2110 Fail:0 Unfinished:890 
+
+2019-02-26T19:50:52+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2130 Fail:0 Unfinished:870 
+
+2019-02-26T19:50:53+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2150 Fail:0 Unfinished:850 
+
+2019-02-26T19:50:54+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2160 Fail:0 Unfinished:840 
+
+2019-02-26T19:50:55+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2160 Fail:0 Unfinished:840 
+
+2019-02-26T19:50:56+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2181 Fail:0 Unfinished:819 
+
+2019-02-26T19:50:57+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2201 Fail:0 Unfinished:799 
+
+2019-02-26T19:50:58+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2217 Fail:0 Unfinished:783 
+
+2019-02-26T19:50:59+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2243 Fail:0 Unfinished:757 
+
+2019-02-26T19:51:00+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2275 Fail:0 Unfinished:725 
+
+2019-02-26T19:51:01+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2293 Fail:0 Unfinished:707 
+
+2019-02-26T19:51:02+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2311 Fail:0 Unfinished:689 
+
+2019-02-26T19:51:03+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2332 Fail:0 Unfinished:668 
+
+2019-02-26T19:51:04+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2360 Fail:0 Unfinished:640 
+
+2019-02-26T19:51:05+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2371 Fail:0 Unfinished:629 
+
+2019-02-26T19:51:06+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2391 Fail:0 Unfinished:609 
+
+2019-02-26T19:51:07+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2417 Fail:0 Unfinished:583 
+
+2019-02-26T19:51:08+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2441 Fail:0 Unfinished:559 
+
+2019-02-26T19:51:09+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2451 Fail:0 Unfinished:549 
+
+2019-02-26T19:51:10+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2481 Fail:0 Unfinished:519 
+
+2019-02-26T19:51:11+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2501 Fail:0 Unfinished:499 
+
+2019-02-26T19:51:12+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2537 Fail:0 Unfinished:463 
+
+2019-02-26T19:51:13+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2555 Fail:0 Unfinished:445 
+
+2019-02-26T19:51:14+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2583 Fail:0 Unfinished:417 
+
+2019-02-26T19:51:15+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2616 Fail:0 Unfinished:384 
+
+2019-02-26T19:51:16+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2638 Fail:0 Unfinished:362 
+
+2019-02-26T19:51:17+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2671 Fail:0 Unfinished:329 
+
+2019-02-26T19:51:18+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2701 Fail:0 Unfinished:299 
+
+2019-02-26T19:51:19+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2731 Fail:0 Unfinished:269 
+
+2019-02-26T19:51:20+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2767 Fail:0 Unfinished:233 
+
+2019-02-26T19:51:21+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2801 Fail:0 Unfinished:199 
+
+2019-02-26T19:51:22+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2821 Fail:0 Unfinished:179 
+
+2019-02-26T19:51:23+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2841 Fail:0 Unfinished:159 
+
+2019-02-26T19:51:24+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2861 Fail:0 Unfinished:139 
+
+2019-02-26T19:51:25+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2894 Fail:0 Unfinished:106 
+
+2019-02-26T19:51:26+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2924 Fail:0 Unfinished:76 
+
+2019-02-26T19:51:27+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2971 Fail:0 Unfinished:29 
+
+2019-02-26T19:51:28+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2991 Fail:0 Unfinished:9 
+
+2019-02-26T19:51:29+06:00 - DEBUG [bench-flow.js]: r.create.max: 1551189044.154 r.create.min: 1551189037.216 r.final.max: 1551189088.401 r.final.min: 1551189039.163 
+
+2019-02-26T19:51:29+06:00 - DEBUG [bench-flow.js]: sendTransactionProposal: 5.531ms length: 1000 
+
+2019-02-26T19:51:29+06:00 - DEBUG [bench-flow.js]: sendTransaction: 19.507ms 
+
+2019-02-26T19:51:29+06:00 - DEBUG [bench-flow.js]: invokeLantency: 0ms 
+
+2019-02-26T19:51:29+06:00 - INFO [bench-flow.js]: ###test result:### 
+
+2019-02-26T19:51:29+06:00 - INFO [bench-flow.js]: 
++------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|------|------|------|-----------|-------------|-------------|-------------|------------|
+| open | 1000 | 0    | 144.1 tps | 45.47 s     | 1.78 s      | 28.31 s     | 19.5 tps   |
++------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-02-26T19:51:29+06:00 - INFO [bench-flow.js]: ### resource stats ### 
+
+2019-02-26T19:51:29+06:00 - INFO [bench-flow.js]: 
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+| TYPE    | NAME                              | Memory(max) | Memory(avg) | CPU(max) | CPU(avg) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Process | node local-client.js(avg)         | 122.6MB     | 112.5MB     | 34.40%   | 6.05%    | -          | -           | -         | -          |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...ar-v1 | 12.6MB      | 12.2MB      | 71.44%   | 8.23%    | 2.2MB      | 2.0MB       | 128.0KB   | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org1.example.com            | 123.7MB     | 116.1MB     | 122.78%  | 51.05%   | 10.8MB     | 6.3MB       | 208.0KB   | 12.4MB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | orderer.example.com               | 43.0MB      | 41.1MB      | 102.92%  | 16.45%   | 3.7MB      | 3.9MB       | 0B        | 8.8MB      |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.example.com                    | 10.1MB      | 10.0MB      | 0.05%    | 0.00%    | 1.0KB      | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb                           | 195.9MB     | 173.6MB     | 130.14%  | 93.35%   | 2.0MB      | 4.0MB       | 0B        | 37.1MB     |
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+ 
+
+2019-02-26T19:51:29+06:00 - INFO [bench-flow.js]: ------ Passed 'open' testing ------ 
+
+2019-02-26T19:51:29+06:00 - INFO [bench-flow.js]: Waiting 5 seconds for the next round... 
+
+2019-02-26T19:51:29+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 3000 Fail:0 Unfinished:0 
+
+2019-02-26T19:51:30+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 3000 Fail:0 Unfinished:0 
+
+2019-02-26T19:51:31+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 3000 Fail:0 Unfinished:0 
+
+2019-02-26T19:51:32+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 3000 Fail:0 Unfinished:0 
+
+2019-02-26T19:51:33+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 3000 Fail:0 Unfinished:0 
+
+2019-02-26T19:51:34+06:00 - INFO [bench-flow.js]: ####### Testing 'query' ####### 
+
+2019-02-26T19:51:34+06:00 - INFO [bench-flow.js]: ------ Test round 4 ------ 
+
+2019-02-26T19:51:34+06:00 - INFO [local-client.js]: doTest() with:
+	{"type":"test","label":"query","rateControl":{"type":"fixed-rate","opts":{"tps":100}},"trim":0,"cb":"benchmark/simple/query.js","config":"network/fabric-v1.2/dev/fabric-go.json","numb":200,"txFile":{"roundLength":2,"roundCurrent":0,"readWrite":"no"},"roundIdx":4,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":2}
+
+2019-02-26T19:51:34+06:00 - INFO [local-client.js]: doTest() with:
+	{"type":"test","label":"query","rateControl":{"type":"fixed-rate","opts":{"tps":100}},"trim":0,"cb":"benchmark/simple/query.js","config":"network/fabric-v1.2/dev/fabric-go.json","numb":200,"txFile":{"roundLength":2,"roundCurrent":0,"readWrite":"no"},"roundIdx":4,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":3}
+
+2019-02-26T19:51:34+06:00 - INFO [local-client.js]: doTest() with:
+	{"type":"test","label":"query","rateControl":{"type":"fixed-rate","opts":{"tps":100}},"trim":0,"cb":"benchmark/simple/query.js","config":"network/fabric-v1.2/dev/fabric-go.json","numb":200,"txFile":{"roundLength":2,"roundCurrent":0,"readWrite":"no"},"roundIdx":4,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":1}
+
+2019-02-26T19:51:34+06:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2019-02-26T19:51:34+06:00 - DEBUG [fabric.js]: getContext) name: query clientIndex: 2 txFile: {"roundLength":2,"roundCurrent":0,"readWrite":"no","name":"query"} 
+
+2019-02-26T19:51:34+06:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2019-02-26T19:51:34+06:00 - DEBUG [fabric.js]: getContext) name: query clientIndex: 1 txFile: {"roundLength":2,"roundCurrent":0,"readWrite":"no","name":"query"} 
+
+2019-02-26T19:51:34+06:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2019-02-26T19:51:34+06:00 - DEBUG [fabric.js]: getContext) name: query clientIndex: 3 txFile: {"roundLength":2,"roundCurrent":0,"readWrite":"no","name":"query"} 
+
+2019-02-26T19:51:34+06:00 - INFO [local-client.js]: doTest() with:
+	{"type":"test","label":"query","rateControl":{"type":"fixed-rate","opts":{"tps":100}},"trim":0,"cb":"benchmark/simple/query.js","config":"network/fabric-v1.2/dev/fabric-go.json","numb":200,"txFile":{"roundLength":2,"roundCurrent":0,"readWrite":"no"},"roundIdx":4,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":0}
+
+2019-02-26T19:51:34+06:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2019-02-26T19:51:34+06:00 - DEBUG [fabric.js]: getContext) name: query clientIndex: 0 txFile: {"roundLength":2,"roundCurrent":0,"readWrite":"no","name":"query"} 
+
+2019-02-26T19:51:34+06:00 - INFO [local-client.js]: doTest() with:
+	{"type":"test","label":"query","rateControl":{"type":"fixed-rate","opts":{"tps":100}},"trim":0,"cb":"benchmark/simple/query.js","config":"network/fabric-v1.2/dev/fabric-go.json","numb":200,"txFile":{"roundLength":2,"roundCurrent":0,"readWrite":"no"},"roundIdx":4,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":4}
+
+2019-02-26T19:51:34+06:00 - DEBUG [local-client.js]: Info: client 17733 start test runFixedNumber():querying accounts 
+
+2019-02-26T19:51:34+06:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2019-02-26T19:51:34+06:00 - DEBUG [fabric.js]: getContext) name: query clientIndex: 4 txFile: {"roundLength":2,"roundCurrent":0,"readWrite":"no","name":"query"} 
+
+2019-02-26T19:51:34+06:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":100}}
+
+2019-02-26T19:51:34+06:00 - DEBUG [local-client.js]: Info: client 17742 start test runFixedNumber():querying accounts 
+
+2019-02-26T19:51:34+06:00 - DEBUG [local-client.js]: Info: client 17734 start test runFixedNumber():querying accounts 
+
+2019-02-26T19:51:34+06:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":100}}
+
+2019-02-26T19:51:34+06:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":100}}
+
+2019-02-26T19:51:34+06:00 - DEBUG [local-client.js]: Info: client 17722 start test runFixedNumber():querying accounts 
+
+2019-02-26T19:51:34+06:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":100}}
+
+2019-02-26T19:51:34+06:00 - DEBUG [local-client.js]: Info: client 17727 start test runFixedNumber():querying accounts 
+
+2019-02-26T19:51:34+06:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":100}}
+
+2019-02-26T19:51:35+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 3000 Fail:0 Unfinished:0 
+
+2019-02-26T19:51:36+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3087 Succ: 3075 Fail:0 Unfinished:12 
+
+2019-02-26T19:51:37+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3168 Succ: 3164 Fail:0 Unfinished:4 
+
+2019-02-26T19:51:38+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3278 Succ: 3253 Fail:0 Unfinished:25 
+
+2019-02-26T19:51:39+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3398 Succ: 3390 Fail:0 Unfinished:8 
+
+2019-02-26T19:51:40+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3458 Succ: 3454 Fail:0 Unfinished:4 
+
+2019-02-26T19:51:41+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3559 Succ: 3539 Fail:0 Unfinished:20 
+
+2019-02-26T19:51:42+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3778 Succ: 3632 Fail:0 Unfinished:146 
+
+2019-02-26T19:51:43+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3858 Succ: 3744 Fail:0 Unfinished:114 
+
+2019-02-26T19:51:44+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3982 Succ: 3883 Fail:0 Unfinished:99 
+
+2019-02-26T19:51:45+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4000 Succ: 4000 Fail:0 Unfinished:0 
+
+2019-02-26T19:51:46+06:00 - DEBUG [bench-flow.js]: r.create.max: 1551189104.866 r.create.min: 1551189094.682 r.final.max: 1551189105.153 r.final.min: 1551189094.755 
+
+2019-02-26T19:51:46+06:00 - DEBUG [bench-flow.js]: sendTransactionProposal: 0ms length: 1000 
+
+2019-02-26T19:51:46+06:00 - DEBUG [bench-flow.js]: sendTransaction: 0ms 
+
+2019-02-26T19:51:46+06:00 - DEBUG [bench-flow.js]: invokeLantency: 0ms 
+
+2019-02-26T19:51:46+06:00 - INFO [bench-flow.js]: ###test result:### 
+
+2019-02-26T19:51:46+06:00 - INFO [bench-flow.js]: 
++-------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name  | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|-------|------|------|-----------|-------------|-------------|-------------|------------|
+| query | 1000 | 0    | 98.2 tps  | 3.71 s      | 0.01 s      | 0.47 s      | 95.5 tps   |
++-------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-02-26T19:51:46+06:00 - INFO [bench-flow.js]: ### resource stats ### 
+
+2019-02-26T19:51:46+06:00 - INFO [bench-flow.js]: 
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+| TYPE    | NAME                              | Memory(max) | Memory(avg) | CPU(max) | CPU(avg) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Process | node local-client.js(avg)         | 111.6MB     | 110.1MB     | 31.48%   | 19.30%   | -          | -           | -         | -          |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...ar-v1 | 12.6MB      | 12.6MB      | 56.27%   | 24.33%   | 1.8MB      | 814.0KB     | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org1.example.com            | 123.9MB     | 123.8MB     | 143.55%  | 92.08%   | 4.8MB      | 4.6MB       | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | orderer.example.com               | 43.0MB      | 43.0MB      | 0.06%    | 0.02%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.example.com                    | 10.0MB      | 10.0MB      | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb                           | 214.1MB     | 192.4MB     | 201.82%  | 142.52%  | 1.1MB      | 2.7MB       | 0B        | 0B         |
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+ 
+
+2019-02-26T19:51:46+06:00 - INFO [bench-flow.js]: ------ Passed 'query' testing ------ 
+
+2019-02-26T19:51:46+06:00 - INFO [bench-flow.js]: Waiting 5 seconds for the next round... 
+
+2019-02-26T19:51:46+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4000 Succ: 4000 Fail:0 Unfinished:0 
+
+2019-02-26T19:51:47+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4000 Succ: 4000 Fail:0 Unfinished:0 
+
+2019-02-26T19:51:48+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4000 Succ: 4000 Fail:0 Unfinished:0 
+
+2019-02-26T19:51:54+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4000 Succ: 4000 Fail:0 Unfinished:0 
+
+2019-02-26T19:51:55+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4000 Succ: 4000 Fail:0 Unfinished:0 
+
+2019-02-26T19:51:55+06:00 - INFO [bench-flow.js]: ------ Test round 5 ------ 
+
+2019-02-26T19:51:55+06:00 - INFO [local-client.js]: doTest() with:
+	{"type":"test","label":"query","rateControl":{"type":"fixed-rate","opts":{"tps":200}},"trim":0,"cb":"benchmark/simple/query.js","config":"network/fabric-v1.2/dev/fabric-go.json","numb":200,"txFile":{"roundLength":2,"roundCurrent":1,"readWrite":"no"},"roundIdx":5,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":4}
+
+2019-02-26T19:51:55+06:00 - INFO [local-client.js]: doTest() with:
+	{"type":"test","label":"query","rateControl":{"type":"fixed-rate","opts":{"tps":200}},"trim":0,"cb":"benchmark/simple/query.js","config":"network/fabric-v1.2/dev/fabric-go.json","numb":200,"txFile":{"roundLength":2,"roundCurrent":1,"readWrite":"no"},"roundIdx":5,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":0}
+
+2019-02-26T19:51:55+06:00 - INFO [local-client.js]: doTest() with:
+	{"type":"test","label":"query","rateControl":{"type":"fixed-rate","opts":{"tps":200}},"trim":0,"cb":"benchmark/simple/query.js","config":"network/fabric-v1.2/dev/fabric-go.json","numb":200,"txFile":{"roundLength":2,"roundCurrent":1,"readWrite":"no"},"roundIdx":5,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":2}
+
+2019-02-26T19:51:55+06:00 - INFO [local-client.js]: doTest() with:
+	{"type":"test","label":"query","rateControl":{"type":"fixed-rate","opts":{"tps":200}},"trim":0,"cb":"benchmark/simple/query.js","config":"network/fabric-v1.2/dev/fabric-go.json","numb":200,"txFile":{"roundLength":2,"roundCurrent":1,"readWrite":"no"},"roundIdx":5,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":3}
+
+2019-02-26T19:51:55+06:00 - INFO [local-client.js]: doTest() with:
+	{"type":"test","label":"query","rateControl":{"type":"fixed-rate","opts":{"tps":200}},"trim":0,"cb":"benchmark/simple/query.js","config":"network/fabric-v1.2/dev/fabric-go.json","numb":200,"txFile":{"roundLength":2,"roundCurrent":1,"readWrite":"no"},"roundIdx":5,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":1}
+
+2019-02-26T19:51:55+06:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2019-02-26T19:51:55+06:00 - DEBUG [fabric.js]: getContext) name: query clientIndex: 0 txFile: {"roundLength":2,"roundCurrent":1,"readWrite":"no","name":"query"} 
+
+2019-02-26T19:51:55+06:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2019-02-26T19:51:55+06:00 - DEBUG [fabric.js]: getContext) name: query clientIndex: 4 txFile: {"roundLength":2,"roundCurrent":1,"readWrite":"no","name":"query"} 
+
+2019-02-26T19:51:55+06:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2019-02-26T19:51:55+06:00 - DEBUG [fabric.js]: getContext) name: query clientIndex: 3 txFile: {"roundLength":2,"roundCurrent":1,"readWrite":"no","name":"query"} 
+
+2019-02-26T19:51:55+06:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2019-02-26T19:51:55+06:00 - DEBUG [fabric.js]: getContext) name: query clientIndex: 2 txFile: {"roundLength":2,"roundCurrent":1,"readWrite":"no","name":"query"} 
+
+2019-02-26T19:51:55+06:00 - DEBUG [local-client.js]: Info: client 17722 start test runFixedNumber():querying accounts 
+
+2019-02-26T19:51:55+06:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":200}}
+
+2019-02-26T19:51:55+06:00 - DEBUG [local-client.js]: Info: client 17734 start test runFixedNumber():querying accounts 
+
+2019-02-26T19:51:55+06:00 - DEBUG [local-client.js]: Info: client 17742 start test runFixedNumber():querying accounts 
+
+2019-02-26T19:51:55+06:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":200}}
+
+2019-02-26T19:51:55+06:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":200}}
+
+2019-02-26T19:51:55+06:00 - DEBUG [local-client.js]: Info: client 17733 start test runFixedNumber():querying accounts 
+
+2019-02-26T19:51:55+06:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":200}}
+
+2019-02-26T19:51:55+06:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2019-02-26T19:51:55+06:00 - DEBUG [fabric.js]: getContext) name: query clientIndex: 1 txFile: {"roundLength":2,"roundCurrent":1,"readWrite":"no","name":"query"} 
+
+2019-02-26T19:51:56+06:00 - DEBUG [local-client.js]: Info: client 17727 start test runFixedNumber():querying accounts 
+
+2019-02-26T19:51:56+06:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":200}}
+
+2019-02-26T19:51:57+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4000 Succ: 4000 Fail:0 Unfinished:0 
+
+2019-02-26T19:51:58+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4273 Succ: 4088 Fail:0 Unfinished:185 
+
+2019-02-26T19:51:59+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4431 Succ: 4116 Fail:0 Unfinished:315 
+
+2019-02-26T19:52:00+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4611 Succ: 4206 Fail:0 Unfinished:405 
+
+2019-02-26T19:52:01+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4766 Succ: 4233 Fail:0 Unfinished:533 
+
+2019-02-26T19:52:02+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4988 Succ: 4304 Fail:0 Unfinished:684 
+
+2019-02-26T19:52:03+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 5000 Succ: 4458 Fail:0 Unfinished:542 
+
+2019-02-26T19:52:04+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 5000 Succ: 4516 Fail:0 Unfinished:484 
+
+2019-02-26T19:52:05+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 5000 Succ: 4944 Fail:0 Unfinished:56 
+
+2019-02-26T19:52:06+06:00 - DEBUG [bench-flow.js]: r.create.max: 1551189121.971 r.create.min: 1551189115.772 r.final.max: 1551189124.915 r.final.min: 1551189115.817 
+
+2019-02-26T19:52:06+06:00 - DEBUG [bench-flow.js]: sendTransactionProposal: 0ms length: 1000 
+
+2019-02-26T19:52:06+06:00 - DEBUG [bench-flow.js]: sendTransaction: 0ms 
+
+2019-02-26T19:52:06+06:00 - DEBUG [bench-flow.js]: invokeLantency: 0ms 
+
+2019-02-26T19:52:06+06:00 - INFO [bench-flow.js]: ###test result:### 
+
+2019-02-26T19:52:06+06:00 - INFO [bench-flow.js]: 
++-------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name  | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|-------|------|------|-----------|-------------|-------------|-------------|------------|
+| query | 1000 | 0    | 161.3 tps | 7.27 s      | 0.04 s      | 3.43 s      | 109.4 tps  |
++-------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-02-26T19:52:06+06:00 - INFO [bench-flow.js]: ### resource stats ### 
+
+2019-02-26T19:52:06+06:00 - INFO [bench-flow.js]: 
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+| TYPE    | NAME                              | Memory(max) | Memory(avg) | CPU(max) | CPU(avg) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Process | node local-client.js(avg)         | 114.1MB     | 110.6MB     | 34.74%   | 18.44%   | -          | -           | -         | -          |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...ar-v1 | 12.6MB      | 12.6MB      | 34.04%   | 16.55%   | 1.5MB      | 544.0KB     | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org1.example.com            | 138.4MB     | 127.6MB     | 164.20%  | 121.81%  | 4.0MB      | 3.9MB       | 8.0KB     | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | orderer.example.com               | 43.0MB      | 42.2MB      | 0.15%    | 0.06%    | 70B        | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.example.com                    | 10.0MB      | 10.0MB      | 0.00%    | 0.00%    | 70B        | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb                           | 337.5MB     | 242.5MB     | 311.98%  | 190.94%  | 1.3MB      | 2.4MB       | 0B        | 0B         |
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+ 
+
+2019-02-26T19:52:06+06:00 - INFO [bench-flow.js]: ------ Passed 'query' testing ------ 
+
+2019-02-26T19:52:06+06:00 - INFO [bench-flow.js]: ---------- Finished Test ----------
+ 
+
+2019-02-26T19:52:06+06:00 - INFO [bench-flow.js]: ###all test results:### 
+
+2019-02-26T19:52:06+06:00 - INFO [bench-flow.js]: 
++------+-------+------+------+-----------+-------------+-------------+-------------+------------+
+| Test | Name  | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|------|-------|------|------|-----------|-------------|-------------|-------------|------------|
+| 1    | open  | 1000 | 0    | 46.9 tps  | 22.07 s     | 1.01 s      | 14.08 s     | 23.9 tps   |
+|------|-------|------|------|-----------|-------------|-------------|-------------|------------|
+| 2    | open  | 1000 | 0    | 92.1 tps  | 39.96 s     | 1.98 s      | 23.01 s     | 21.7 tps   |
+|------|-------|------|------|-----------|-------------|-------------|-------------|------------|
+| 3    | open  | 1000 | 0    | 144.1 tps | 45.47 s     | 1.78 s      | 28.31 s     | 19.5 tps   |
+|------|-------|------|------|-----------|-------------|-------------|-------------|------------|
+| 4    | query | 1000 | 0    | 98.2 tps  | 3.71 s      | 0.01 s      | 0.47 s      | 95.5 tps   |
+|------|-------|------|------|-----------|-------------|-------------|-------------|------------|
+| 5    | query | 1000 | 0    | 161.3 tps | 7.27 s      | 0.04 s      | 3.43 s      | 109.4 tps  |
++------+-------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-02-26T19:52:06+06:00 - INFO [monitor.js]: 
+ ### resource stats (maximum) ### 
+
+2019-02-26T19:52:06+06:00 - INFO [monitor.js]: 
++---------+-----------------------------------+-------------+----------+------------+-------------+-----------+------------+
+| TYPE    | NAME                              | Memory(max) | CPU(max) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Process | node local-client.js(avg)         | 136.7MB     | 70.25%   | -          | -           | -         | -          |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...ar-v1 | 12.6MB      | 83.47%   | 3.5MB      | 3.2MB       | 424.0KB   | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org1.example.com            | 138.4MB     | 164.20%  | 12.3MB     | 7.6MB       | 600.0KB   | 12.4MB     |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | orderer.example.com               | 43.0MB      | 119.58%  | 4.0MB      | 4.2MB       | 992.0KB   | 8.9MB      |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.example.com                    | 10.1MB      | 0.94%    | 1.0KB      | 0B          | 648.0KB   | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb                           | 337.5MB     | 311.98%  | 2.0MB      | 4.0MB       | 32.0KB    | 38.1MB     |
++---------+-----------------------------------+-------------+----------+------------+-------------+-----------+------------+
+ 
+
+2019-02-26T19:52:06+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 5000 Succ: 5000 Fail:0 Unfinished:0 
+
+2019-02-26T19:52:06+06:00 - INFO [bench-flow.js]: Generated report at /home/ialom/chain-caliper/report-20190226T135206.html 
+
+2019-02-26T19:52:06+06:00 - INFO [demo.js]: [Transaction Info] - Submitted: 5000 Succ: 5000 Fail:0 Unfinished:0 
+
+2019-02-26T19:52:06+06:00 - INFO [bench-flow.js]: Executing command: docker-compose -f network/fabric-v1.2/dev/docker-compose.yaml down;docker rm $(docker ps -aq);docker rmi $(docker images dev* -q) 
+
+2019-02-26T19:52:06+06:00 - ERROR [monitor-docker.js]: TypeError: Cannot read property 'id' of undefined 
+
+2019-02-26T19:52:06+06:00 - INFO [client-util.js]: Client exited  
+
+2019-02-26T19:52:06+06:00 - INFO [client-util.js]: Client exited  
+
+2019-02-26T19:52:06+06:00 - INFO [client-util.js]: Client exited  
+
+2019-02-26T19:52:06+06:00 - INFO [client-util.js]: Client exited  
+
+2019-02-26T19:52:06+06:00 - INFO [client-util.js]: Client exited  
+
+2019-02-26T19:52:21+06:00 - INFO [bench-flow.js]: 
+
+#######################################
+# Test summary: 5 succeeded, 0 failed #
+#######################################
+ 
+
