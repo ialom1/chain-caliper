@@ -1029,6 +1029,7 @@ async function invokebycontext(context, id, version, args, timeout){
         args: args,
         txId: txIdObject,
     };
+    //console.log(proposalRequest)
 
     let proposalResponseObject = null;
     try {

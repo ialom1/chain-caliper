@@ -59,8 +59,12 @@ function generateWorkload() {
         let acc_id = generateAccount();
         account_array.push(acc_id);
         let acc = {
-            'function': 'initLedger',
-            'Args': '[]'
+            fcn: 'createCar',
+            arg1: acc_id,
+            arg2: 'Chevy',
+            arg3: 'Volt',
+            arg4: 'Red',
+            arg5: 'Nick'
         };
         workload.push(acc);
     }
@@ -69,6 +73,7 @@ function generateWorkload() {
 
 module.exports.run = function() {
     let args = generateWorkload();
+    console.log(args)
     return bc.invokeSmartContract(contx, 'fabcar', 'v1', args, 100);
 };
 

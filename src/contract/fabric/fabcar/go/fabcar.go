@@ -79,7 +79,7 @@ func (s *SmartContract) Invoke(APIstub shim.ChaincodeStubInterface) sc.Response 
 		return s.changeCarOwner(APIstub, args)
 	}
 
-	return shim.Error("Invalid Smart Contract function name. %v", function)
+	return shim.Error("Invalid Smart Contract function name.")
 }
 
 func (s *SmartContract) queryCar(APIstub shim.ChaincodeStubInterface, args []string) sc.Response {
