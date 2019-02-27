@@ -1,5 +1,4 @@
 ### Process Flow in Hyperledger Caliper
-#### Fabcar Network tests
 
 benchmark/simple/main.js {  
     // caliper process begins from main.js
@@ -51,7 +50,7 @@ benchmark/simple/main.js {
                 // Generate the message containig parameters like arguments, test, callback function etc
 
                 // demo.startWatch(client) {
-                    informs the monitor to watch the client
+                    // informs the monitor to watch the client
                 }                       
             }
         }
