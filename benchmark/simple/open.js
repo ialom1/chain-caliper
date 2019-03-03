@@ -58,14 +58,25 @@ function generateWorkload() {
     for(let i= 0; i < txnPerBatch; i++) {
         let acc_id = generateAccount();
         account_array.push(acc_id);
-        let acc = {
+        let fcc = [
+          {
             fcn: 'createCar',
             arg1: acc_id,
-            arg2: 'Chevy',
-            arg3: 'Volt',
-            arg4: 'Red',
-            arg5: 'Nick'
-        };
+            arg2: 'Toyota',
+            arg3: 'Land Cruizer',
+            arg4: 'White',
+            arg5: 'Shakib'
+          },
+          {
+            fcn: 'createCar',
+            arg1: acc_id,
+            arg2: 'Nissan',
+            arg3: 'Patrol',
+            arg4: 'Black',
+            arg5: 'Shatil'
+          }
+        ];
+        const acc  = fcc[Math.floor(Math.random()*(fcc.length))];
         workload.push(acc);
     }
     return workload;
